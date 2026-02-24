@@ -1,0 +1,986 @@
+%% 
+%% Copyright 2007-2025 Elsevier Ltd
+%% 
+%% This file is part of the 'Elsarticle Bundle'.
+%% ---------------------------------------------
+%% 
+%% It may be distributed under the conditions of the LaTeX Project Public
+%% License, either version 1.3 of this license or (at your option) any
+%% later version.  The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 1999/12/01 or later.
+%% 
+%% The list of all files belonging to the 'Elsarticle Bundle' is
+%% given in the file `manifest.txt'.
+%% 
+%% Template article for Elsevier's document class `elsarticle'
+%% with numbered style bibliographic references
+%% SP 2008/03/01
+%% $Id: elsarticle-template-num.tex 272 2025-01-09 17:36:26Z rishi $
+%%
+\documentclass[preprint,review,12pt]{elsarticle}
+
+%% Use the option review to obtain double line spacing
+% \documentclass[authoryear,preprint,review,12pt]{elsarticle}
+
+%% Use the options 1p,twocolumn; 3p; 3p,twocolumn; 5p; or 5p,twocolumn
+%% for a journal layout:
+%% \documentclass[final,1p,times]{elsarticle}
+% \documentclass[final,1p,times,twocolumn]{elsarticle}
+%% \documentclass[final,3p,times]{elsarticle}
+% \documentclass[final,3p,times,twocolumn]{elsarticle}
+%% \documentclass[final,5p,times]{elsarticle}
+% \documentclass[final,5p,times,twocolumn]{elsarticle}
+
+%% For including figures, graphicx.sty has been loaded in
+%% elsarticle.cls. If you prefer to use the old commands
+%% please give \usepackage{epsfig}
+
+%% The amssymb package provides various useful mathematical symbols
+% \usepackage{amssymb}
+%% The amsmath package provides various useful equation environments.
+% \usepackage{amsmath}
+%% The amsthm package provides extended theorem environments
+%% \usepackage{amsthm}
+
+\usepackage{graphicx}%
+\usepackage{multirow}%
+\usepackage{amsmath,amssymb,amsfonts}%
+\usepackage{amsthm}%
+\usepackage{mathrsfs}%
+\usepackage[title]{appendix}%
+\usepackage{xcolor}%
+\usepackage{textcomp}%
+\usepackage{manyfoot}%
+\usepackage{booktabs}%
+\usepackage{algorithm}%
+\usepackage{algorithmicx}%
+\usepackage{algpseudocode}%
+\usepackage{listings}%
+\usepackage{orcidlink}
+\usepackage{subcaption}
+\usepackage{comment}
+\usepackage{orcidlink}
+\usepackage{natbib}
+\usepackage{xcolor}
+%% The lineno packages adds line numbers. Start line numbering with
+%% \begin{linenumbers}, end it with \end{linenumbers}. Or switch it on
+%% for the whole article with \linenumbers.
+%% \usepackage{lineno}
+
+\journal{Applied Soft Computing}
+
+\begin{document}
+
+\begin{frontmatter}
+
+%% Title, authors and addresses
+
+%% use the tnoteref command within \title for footnotes;
+%% use the tnotetext command for theassociated footnote;
+%% use the fnref command within \author or \affiliation for footnotes;
+%% use the fntext command for theassociated footnote;
+%% use the corref command within \author for corresponding author footnotes;
+%% use the cortext command for theassociated footnote;
+%% use the ead command for the email address,
+%% and the form \ead[url] for the home page:
+%% \title{Title\tnoteref{label1}}
+%% \tnotetext[label1]{}
+%% \author{Name\corref{cor1}\fnref{label2}}
+%% \ead{email address}
+%% \ead[url]{home page}
+%% \fntext[label2]{}
+%% \cortext[cor1]{}
+%% \affiliation{organization={},
+%%             addressline={},
+%%             city={},
+%%             postcode={},
+%%             state={},
+%%             country={}}
+%% \fntext[label3]{}
+
+\title{VSA\_Net: Detection of Very Small Aerial Objects using Loss Function Optimized Network with Novel Feature Aggregation}
+
+%% use optional labels to link authors explicitly to addresses:
+%% \author[label1,label2]{}
+%% \affiliation[label1]{organization={},
+%%             addressline={},
+%%             city={},
+%%             postcode={},
+%%             state={},
+%%             country={}}
+%%
+%% \affiliation[label2]{organization={},
+%%             addressline={},
+%%             city={},
+%%             postcode={},
+%%             state={},
+%%             country={}}
+
+% \author{Gaurav Mishra \, \orcidlink{https://orcid.org/0000-0002-9832-3814}}\email{gauravmishra@cse.vnit.ac.in}
+% \author{Manish Kurhekar \, \orcidlink{https://orcid.org/0000-0002-6409-3280}}\email{manishkurhekar@cse.vnit.ac.in}
+% \author*{Anshul Agarwal \, \orcidlink{https://orcid.org/0000-0001-5984-2817}}\email{anshulagarwal@cse.vnit.ac.in}
+
+% \author{\fnm{Aditi} \sur{Bhosale}}\email{aditibhosale03@gmail.com}
+
+% \author{\fnm{Shubham} \sur{Phapale}}\email{shubhamphapale10@gmail.com}
+
+
+% \author{\fnm{Zaid} \sur{Ali}}\email{zalibhilai1312@gmail.com}
+% \author{\fnm{Gajanan} \sur{Sapsod}}\email{gajanansapsod@gmail.com}
+
+
+% \author{Gaurav Mishra \, \orcidlink{https://orcid.org/0000-0002-9832-3814}}\email{gauravmishra@cse.vnit.ac.in}
+% \author{Manish Kurhekar \, \orcidlink{https://orcid.org/0000-0002-6409-3280}}\email{manishkurhekar@cse.vnit.ac.in}
+% \author*{Anshul Agarwal \, \orcidlink{https://orcid.org/0000-0001-5984-2817}}\email{anshulagarwal@cse.vnit.ac.in}
+
+% \author{Authors}
+
+    
+
+\author[11]{Aditi Bhosale, Shubham Phapale\orcidlink{https://orcid.org/0009-0003-6664-3797}, Zaid Ali\orcidlink{https://orcid.org/0009-0007-1718-903X}, Gajanan Sapsod, \\ Gaurav Mishra\orcidlink{https://orcid.org/0000-0002-9832-3814} , Manish Kurhekar\orcidlink{https://orcid.org/0000-0002-6409-3280} and Anshul Agarwal\orcidlink{https://orcid.org/0000-0001-5984-2817}\corref{cor1}} %% Author name
+% \author{daa,bb} %% Author name
+\cortext[cor1]{Corresponding author: anshulagarwal@cse.vnit.ac.in} % define the note
+
+%% Author affiliation
+\affiliation[11]{organization={Department of Computer Science and Engineering, \\ Visvesvaraya National Institute of Technology (VNIT) Nagpur},%Department and Organization
+            % addressline={}, 
+            % city={Nagpur},
+            postcode={440010}, 
+            % state={},
+            country={India}}
+
+%% Abstract
+\begin{abstract}
+Detecting very small airborne objects in sky-focused surveillance imagery is a challenging task due to their minuscule size, low resolution, and the vast, texture-less sky background. These small-scale objects, such as drones or distant aircraft, typically occupy as little as 6×6 pixels in an image, making them extremely difficult to detect. Even advanced models like YOLO often struggle to recognize or accurately locate such tiny targets. To overcome these limitations, we developed a novel and specialized framework designed specifically for the detection of very small airborne objects. Building upon the YOLO architecture, we introduce key modifications to improve small object detection performance. 
+Our architecture introduces four major enhancements: (1) additional high-resolution detection layer that focuses on extracting finer details from shallow layers, allowing the model to better preserve spatial information crucial for identifying small objects; (2) a dynamic, scale-aware loss function that adjusts the weight given to hard-to-detect objects during training.  This mechanism ensures that small objects receive greater attention during the optimization process; (3) the standard C3 module in YOLOv5’s backbone was replaced with Generalised Efficient Layer Aggregation Network (GELAN), that enhances feature extraction capabilities through dense aggregation and efficient gradient flow; and (4) anchor box optimization by analyzing dataset object size distributions and adjusting anchor scales and aspect ratios.  The analysis of experiment results on real-world aerial datasets demonstrates that the proposed framework outperforms the base models in terms of mAP50, mAP50-95, precision, recall, and detection of multiscale aerial objects.  The proposed model illustrates an improvement in accuracy of 2\% over the base model and significantly improves the reliability in the detection of small airborne targets. 
+\end{abstract}
+
+%%Graphical abstract
+% \begin{graphicalabstract}
+% %\includegraphics{grabs}
+% \end{graphicalabstract}
+
+%%Research highlights
+% \begin{highlights}
+% \item Research highlight 1
+% \item Research highlight 2
+% \end{highlights}
+
+%% Keywords
+\begin{keyword}
+%% keywords here, in the form: keyword \sep keyword
+YOLO \sep CNN \sep GELAN \sep Feature Map \sep Small Object Detection\sep Loss Function
+%% PACS codes here, in the form: \PACS code \sep code
+
+%% MSC codes here, in the form: \MSC code \sep code
+%% or \MSC[2008] code \sep code (2000 is the default)
+
+\end{keyword}
+
+\end{frontmatter}
+
+%% Add \usepackage{lineno} before \begin{document} and uncomment 
+%% following line to enable line numbers
+%% \linenumbers
+
+%% main text
+%%
+
+%% Use \section commands to start a section
+%%%%%%%%%%%%%%@%@%@%
+
+\section{Introduction}\label{sec1}
+The detection of small aerial objects, such as drones, birds, helicopters, and small aircraft, in surveillance imagery is increasingly critical due to its wide-ranging applications in security, military reconnaissance, disaster response, and environmental monitoring. These detection systems support airspace security by monitoring unauthorized drones, aviation safety by tracking planes and helicopters to avoid collisions, and wildlife and environmental conservation through bird detection that helps mitigate ecological disturbances caused by drones. The differentiation between drones and birds or helicopters is particularly important for operational accuracy in urban or sensitive environments. Aerial object detection systems play vital roles in public safety, air traffic management, and ecological protection. However, detecting very small objects is a daunting task because of their imperceptibility to the human eye and their susceptibility to environmental factors such as noise, motion blur, and lighting variability.
+
+Several traditional deep learning-based object detection models have been developed to address various challenges, but most struggle with accurately detecting small objects in aerial imagery. VGG19 \cite{simonyan2014very}, despite its deep architecture and fine 3×3 convolutions, suffers from significant spatial resolution loss due to aggressive down-sampling. Similarly, Faster R-CNN \cite{ren2016faster}, while effective in object classification and bounding box refinement through its Region Proposal Network and RoI pooling, is computationally intensive and unsuitable for real-time or high-resolution aerial applications. To address scale variation, approaches like DenseNet with super-resolution layers \cite{zhou2018scale} and SODNet \cite{qi2022small} with adaptive spatial parallel convolution have been proposed, enhancing multi-scale representation but facing challenges with noise sensitivity and computational efficiency.
+
+Despite rapid advancements in deep learning-based object detection frameworks, detecting very small aerial objects remains a challenging task 
+\cite{new_BAKIRCI2024112015,new_goswami}.
+These objects often appear extremely small in the image—sometimes as few as 6×6 pixels—making them difficult to identify even for state-of-the-art models such as YOLO 
+\cite{new_SARKAR2025113837,new_wang_yolo_airport}.
+% \cite{Redmon2016, glenn_jocher_2020_4154370}. 
+Challenges include limited resolution, poor contrast against a featureless sky background, motion blur, lighting variability, and the scarcity of high-quality annotated datasets for training \cite{new_heirarchy,new_LI2025113841}. These factors collectively reduce detection accuracy and generalization capabilities in real-world conditions. YOLOv5 \cite{glenn_jocher_2020_4154370} is preferred over YOLOv8 \cite{yaseen2024yolov8,ultralytics_yolov8_2023} where maximal inference speed and deployment maturity are critical, as often found in military scenarios \cite{Bochkovskiy2021,liu2023military,Redmon2021}.
+
+%Despite significant advancements in object detection frameworks, traditional models like \cite{Redmon2016} YOLO often fail to perform adequately for small object detection. This is primarily due to their reliance on feature maps that cannot effectively capture fine-grained details at small scales. Moreover, the limited availability of annotated datasets, poor image quality, and environmental challenges result in low detection accuracy, poor generalization to real-world conditions, and challenges in processing high-resolution aerial imagery in real time. YOLOv5 \cite{glenn_jocher_2020_4154370} is preferred over YOLOv8\cite{yaseen2024yolov8,ultralytics_yolov8_2023} where maximal inference speed and deployment maturity are critical, as often found in military scenarios \cite{Krizhevsky2017,Girshick2014,Girshick2015,Ren2016,Redmon2017,Bochkovskiy2021,Liu2016,Zhu2016,liu2023military,Redmon2021}.
+Building upon YOLOv5, this paper proposes a specialized approach tailored for small aerial object detection (locating the object and classifying it) on sky-based imagery. Our primary contributions are outlined below:
+\begin{itemize}
+    
+    \item   \textbf{Addition of a Feature Layer:} 
+     YOLO‑based models typically predict at three scales; by inserting a fourth, higher‑resolution feature layer, the network can generate a feature map at a finer grid (e.g. 160x160 for a 640x640 input).
+    \item \textbf{Addition of a Custom Aggregation Layer:} 
+    GELAN (Generalized Efficient Layer Aggregation Network) introduces a gradient‑path planning strategy that routes gradient flows through multiple skip connections, ensuring full information transmission across all layers. By preserving early shallow features via dense aggregation, GELAN enhances the representational power of small object features that would otherwise vanish in deep layers.
+    \item \textbf{Dynamic Loss Function Optimization:} 
+    Building upon the existing loss function that handled three scales, we introduce a fourth scale specifically for very small objects. 
+   \item \textbf{Anchor Box Optimization:} 
+    The anchor box optimization pipeline has been extended to incorporate a fourth scale for very small objects. 
+    
+    \item \textbf{Exhaustive Testing:}
+    The model’s performance is exhaustively evaluated on four different real-world datasets, using metrics like mean Average Precision (mAP) and inference speed. 
+    
+\end{itemize}
+Experimental analysis on real-world aerial datasets demonstrates that the proposed framework outperforms baseline models in key metrics, mAP@50, mAP@50–95, precision, and recall. It shows improved capability in detecting objects. Overall, the proposed architecture achieves a 2\% accuracy gain over the base YOLO model.
+
+
+The paper is organized as follows: Section 2 reviews existing methods in object detection techniques for aerial images, while Section 3 outlines the proposed approach. Sections 4 illustrates the experimental setup and results, and Section 5 concludes with key findings and future directions.
+
+\section{Related Work}
+VGG19 is a deep convolutional neural network architecture consisting of 19 layers, including 16 convolutional layers, 3 fully connected layers, and a softmax layer for classification \cite{simonyan2014very}. The network employs small 3x3 convolutional filters, which allow it to capture fine details in images while maintaining a relatively deep architecture. VGG19 processes input images of size 224x224 pixels, using max pooling layers to progressively reduce the spatial dimensions of feature maps, thereby extracting hierarchical features. The network consists of 19 layers with small 3x3 convolutional filters, which, while effective at capturing fine details, lead to significant down-sampling of feature maps. This aggressive down-sampling reduces the spatial resolution of the feature maps, causing small objects to become too small. As a result, crucial contextual information is lost, making it difficult for the model to recognize small objects in relation to their surroundings \cite{ren2016faster}.
+
+
+Faster R-CNN consists of two integrated components: the Region Proposal Network (RPN) and CNN \cite{ren2016faster, ke2021lightweight}. The RPN is responsible for generating region proposals, i.e., candidate bounding boxes that likely contain objects. After the RPN generates object proposals, the Fast R-CNN module takes these proposals and classifies them into object categories, simultaneously refining the bounding boxes. The model consists of multiple components, including a Region Proposal Network (RPN) and a detection network, which require substantial computational resources for training and inference. This complexity leads to slow processing times \cite{Redmon2016, glenn_jocher_2020_4154370}. 
+
+
+Several works have attempted to handle scale variations in object detection. For instance, Peng Zhou et al.  proposed a DenseNet-based method with super-resolution layers for effective detection of objects at varying scales \cite{zhou2018scale}. In this model, DenseNet-169 is considered as the base network. It uses scale-transfer layer to obtain high-resolution feature maps for detecting small objects, and a pooling layer to obtain feature maps with large receptive fields for detecting the large objects. These layers can be directly embedded into the base network with little computational overhead. Similarly, Guanqiu Qi et al. (2022) developed a method based on adaptive spatial parallel convolution and multi-scale fusion, improving detection by capturing spatial information across scales \cite{qi2022small}. SODNet consists of four components.  These methods, though effective, struggled with handling extreme scale variations and noise sensitivity, limiting their real-time application and computational efficiency.
+
+
+Additionally,  an anchor-free detection method, demonstrated advantages in simplifying computations but faced challenges in managing complex object arrangements and extreme variations in scale \cite{kong2020foveabox}.These models often fail under cluttered environments or occlusion-heavy scenes, making them less suited for aerial images.
+
+
+
+Unlike traditional object detection methods, which involve multiple passes over the image to detect objects, YOLO predicts bounding boxes and class probabilities directly from full images in a single evaluation, making it extremely fast \cite{Redmon2016, glenn_jocher_2020_4154370}. The architecture of YOLOv10 builds upon the strengths of previous YOLO models while introducing several key innovations. The architecture of YOLOv10 consists of different components a) Backbone is responsible for feature extraction, the backbone in YOLOv10 uses an enhanced version of CSPNet (Cross Stage Partial Network) to improve gradient flow and reduce computational redundancy. b) Neck is designed to aggregate features from different scales and pass them to the head. It includes PAN (Path Aggregation Network) layers for effective multiscale feature fusion. c) One-to-many head generates multiple predictions per object during training to provide rich supervisory signals and improve learning accuracy; and d) One to one head generates a single best prediction per object during inference to eliminate the need for NMS, thereby reducing latency and improving efficiency.  YOLO still faces significant challenges when it comes to detecting small objects. One primary reason for this limitation is the architecture's reliance on convolutional layers, which progressively down samples feature maps as objects pass through the network.
+
+
+
+
+
+\section{Methodology}
+Our approach is structured into three key components (Figure \ref{fig:methodology}): network architecture, training methodology, and inference optimization. The network architecture focuses on enhancing feature extraction through efficient layer aggregation and refined feature layers. The training methodology involves anchor box optimization, loss function improvements, and targeted augmentations to enhance small object detection. For inference, we leverage SAHI (Slicing Aided Hyper Inference) to improve detection accuracy on small aerial objects. These elements collectively aim to optimize the detection pipeline for robust performance.
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.95\textwidth]{methodology_final (1).pdf}
+    \caption{Overview of the proposed methodology highlighting the key contributions of the customized CNN model, including network architecture design, optimized training strategies, and tailored inference mechanisms.}
+    \label{fig:methodology}
+\end{figure}
+
+\subsection{Network Architecture}
+
+
+% {\color{brown}
+% \subsubsection{Feature Layer}
+% The original YOLOv5 architecture detects objects at three scales using feature maps of size 80×80, 40×40, and 20×20, obtained by downsampling the 
+% 640×640 
+% input image by factors of 8, 16, and 32, respectively. However, very small objects in sky‐focused aerial imagery-such as drones, distant aircraft, and jets-often lose critical spatial detail through successive convolution and downsampling, leading to degraded localization performance.
+
+% To preserve fine‐grained position information, we introduce a high‐resolution feature map of size 160×160, generated by a 4× downsampling of the input. This branch undergoes fewer convolutional operations, retains a smaller receptive field, and is therefore more effective at detecting small airborne targets.
+
+% Feature maps from different depths carry complementary information: shallow layers provide precise spatial cues, while deeper layers encode rich semantics. We fuse these using both the Feature Pyramid Network (FPN) and the Path Aggregation Network (PAN). The FPN propagates high‐level semantic context top‑down, aiding recognition of complex or larger objects, while the PAN transmits precise localization details bottom‑up, enhancing detection of tiny targets \cite{Qin2020}.  
+
+% By integrating this additional high‐resolution layer with advanced feature fusion, our developed framework markedly improves both localization and classification accuracy for very small aerial objects.  
+% }
+
+\subsubsection{Feature Layer}
+The original YOLOv5 utilized three-scale feature maps (80 × 80, 40 × 40, and 20 × 20) to detect objects of varying sizes. The backbone network downsampled the input image by 8×, 16×, and 32× to generate the corresponding feature maps, which were then fed into the feature fusion network. However, deep layers often lose spatial details due to repeated downsampling, reducing their effectiveness for small object detection. 
+
+A larger feature map with dimensions of 160 × 160 was incorporated into this work. This feature map was produced through 4× downsampling of the input image (640 × 640) by the backbone network. By using fewer convolutional operations, this new feature map retains more location information, has a smaller receptive field, and is better suited for detecting small objects like drones and distant aircraft. 
+This work integrates both the Feature Pyramid Network (FPN)
+% \cite{Lin2017} 
+and Path Aggregation Network (PAN) for feature fusion. The FPN enhances large-scale feature maps by propagating high-level semantic information from top to bottom, improving the recognition of complex objects like larger aircraft or jets in distant views \cite{Qin2020}. Simultaneously, the PAN enhances small-scale feature maps by propagating precise location information from bottom to top, improving the localization and detection of smaller objects like drones.
+
+
+\subsubsection{Custom Aggregation Layer}
+In this research, the YOLOv5 backbone has been modified by replacing the C3 module with GELAN (Generalized Efficient Layer Aggregation Network), a lightweight and efficient network designed to improve small object detection (Figure \ref{fig:gelan}).
+Unlike standard YOLOv5 architectures that rely on C3 modules, GELAN introduces enhanced feature extraction by employing hierarchical processing layers. One of the key enhancements comes from Spatial Pyramid Pooling (SPP)\cite{He2014} blocks, which process multi-scale features using adaptive pooling techniques. This enables the model to handle objects of varying sizes and occlusions more effectively, making it particularly useful for sky aerial object detection, where targets are often small, distant, and prone to scale variations.
+
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[scale=1.2]{elan (1).pdf}
+    \caption{The Illustration of GELAN architecture integrated with Cross Stage Partial (CSP) connections for improved feature propagation.}
+    \label{fig:gelan}
+\end{figure}
+
+
+Additionally, the integration of RepNCSPELAN4 (Rep-Net with Cross-Stage Partial CSP\cite{Wang2020CSPNet} and ELAN) replaces the conventional feature refinement strategy used in YOLOv5. By combining reparameterized convolutional blocks with a more structured feature processing flow, GELAN maintains spatial and semantic consistency while reducing redundant computations.
+
+To further enhance detection accuracy, upsampling techniques are strategically applied at different layers. The upsampled feature maps are concatenated with earlier-stage features, preserving fine details and spatial relationships. This multi-scale fusion approach ensures improved localization and recognition of smaller objects.
+
+At the detection stage, the GELAN Detect module processes multi-scale feature maps and applies convolutional layers to generate predictions. The detection head outputs bounding box coordinates, class confidence scores, and other relevant metadata. During inference, the module dynamically adapts anchor boxes and strides based on the feature map structure, making it more flexible for varying input sizes.
+
+This modification to YOLOv5, replacing C3 with GELAN, results in a more effective small-object detection pipeline. Hierarchical learning and adaptive pooling make GELAN effective under challenging aerial conditions. Given its computational efficiency and scalable architecture, GELAN is well-suited for applications such as drone-based surveillance, remote sensing, and autonomous navigation\cite{ye2024improved}.
+The overall improved architecture is presented in Figure \ref{fig:overall}.
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=1.05\textwidth]{CNN_Proposed_Architecture.drawio (5).pdf}
+    \caption{The overview of proposed architecture:   GELAN blocks are integrated with original YOLO modules and newly added layers to enhance feature representation across scales. It combines efficient backbone processing with refined detection heads for improved very small object detection.}
+    \label{fig:overall}
+\end{figure}
+
+\subsection{Training Methodology}
+
+
+\subsubsection{Anchor Box Optimization}
+
+% \subsection{Anchor Box Setting}
+Anchor boxes are predefined bounding boxes used by the detection model to predict the position and size of objects within an image. The accuracy of these predictions heavily relies on the quality of anchor box selection. The distribution of normalised bounding box dimensions in our dataset revealed a concentration of small objects, indicating the need for dataset-specific anchor boxes. While YOLOv5's default anchors are based on K-means clustering of the COCO dataset, differences between COCO and our dataset necessitated re-clustering. To address this, we employed K-means clustering to group the ground truth bounding boxes from the dataset into four scales: very small, small, medium, and large. 
+Traditional K-means clustering, which relies on Euclidean distance to measure similarity between bounding boxes, is insufficient for scenarios involving objects of varying scales and orientations. Euclidean distance does not account for spatial overlap, a critical factor in determining the alignment between anchor boxes and ground truth boxes. To address this, we utilized a distance function based on Intersection over Union (IoU), a metric that quantifies the overlap between two bounding boxes (Equation \eqref{eq:iou}). The IoU-based distance function is defined in Equation \eqref{eq:dist_iou}.
+\begin{equation}
+\text{IoU}(A_i, B) = \frac{\text{Area}(A_i \cap B)}{\text{Area}(A_i \cup B)}
+\label{eq:iou}
+\end{equation}
+
+\begin{equation}
+d(A_i, B) = 1 - \text{IoU}(A_i, B)
+\label{eq:dist_iou}
+\end{equation}
+
+where $A_i$ represents the $i^{th}$ bounding box and B is the center of the cluster. This formulation is preferred over Euclidean distance because it directly measures the overlap between the predicted anchor boxes and the ground truth boxes, providing a more accurate indication of their similarity.  The scales and their respective anchor boxes are:
+
+\noindent -- {Scale 1 (160×160):} The high-resolution feature map retains maximum spatial information, enabling precise localization of these small objects.
+
+\noindent -- {Scale 2 (80×80):} The feature map strikes a balance between spatial resolution and semantic information.
+
+
+\noindent -- {Scale 3 (40×40):} This scale focuses on medium sized objects.
+
+\noindent -- {Scale 4 (20×20):} This scale is optimized for large objects.
+
+
+% \textbf{Rationale for Scale Division}
+
+% \textbf{Object Size Distribution:}  
+
+% \begin{itemize}
+%     \item Aerial imagery often contains objects of varying scales due to the wide field of view.
+%     \item Dividing anchor boxes into four scales ensures that objects of all sizes are effectively represented.
+% \end{itemize}
+
+% \textbf{Feature Map Resolution:}  
+
+% \begin{itemize}
+%     \item Higher-resolution feature maps (e.g., 160×160) are better suited for detecting small objects as they preserve spatial details.
+%     \item Lower-resolution maps (e.g., 20×20) are more effective for large objects, leveraging high-level semantics.
+% \end{itemize}
+
+% \textbf{Anchor Box Design:}  
+
+% \begin{itemize}
+%     \item The anchor boxes within each scale are derived using IoU-based K-means clustering on ground truth bounding boxes.
+%     \item This ensures that they match the size and aspect ratios of objects in the dataset.
+% \end{itemize}
+
+\noindent The chosen anchor boxes are presented in Table \ref{tab:measurements}.
+
+\begin{table}[htbp]  % Allow LaTeX to position the table better
+    \centering
+    % \resizebox{0.5\textwidth}{!}{  % Resize to 80% of text width
+    \begin{tabular}{|c|c|c|c|}
+    \hline
+    \textbf{Scale Level (Size)} & \textbf{Measurement 1} & \textbf{Measurement 2} & \textbf{Measurement 3} \\ \hline
+    Scale 1 (160×160) & (7, 8) & (12, 10) & (10, 20) \\ \hline
+    Scale 2 (80×80) & (16, 14) & (22, 12) & (18, 22) \\ \hline
+    Scale 3 (40×40) & (29, 16) & (29, 22) & (40, 22) \\ \hline
+    Scale 4 (20×20) & (36, 39) & (66, 36) & (105, 70) \\ \hline
+    \end{tabular}
+    % }
+    % \vspace{0.2cm}
+    \caption{Anchor box dimensions (in pixels) across multi-scale feature maps, optimized for detecting objects of varying sizes ranging from very small to large by leveraging appropriate spatial resolutions for accurate localization in aerial imagery.}
+    \label{tab:measurements}
+\end{table}
+ 
+% \begin{table}[htbp]  % Allow LaTeX to position the table better
+%     \centering
+%     \resizebox{0.5\textwidth}{!}{  % Resize to 80% of text width
+%     \begin{tabular}{|c|c|c|c|}
+%     \hline
+%     \textbf{Scale Level (Size)} & \textbf{Measurement 1} & \textbf{Measurement 2} & \textbf{Measurement 3} \\ \hline
+%     Scale 1 (160×160) & (7.4, 8.6) & (12.8, 10.7) & (10.1, 20.3) \\ \hline
+%     Scale 2 (80×80) & (16.1, 14.6) & (22.6, 12.1) & (18.9, 22.0) \\ \hline
+%     Scale 3 (40×40) & (29.3, 16.9) & (29.6, 22.8) & (40.7, 22.2) \\ \hline
+%     Scale 4 (20×20) & (36.0, 39.5) & (66.5, 36.6) & (105.3, 70.7) \\ \hline
+%     \end{tabular}
+%     }
+%     % \vspace{0.2cm}
+%     \caption{The description of anchor box dimensions (in pixels) across multi-scale feature maps, optimized for detecting objects of varying sizes ranging from very small to large by leveraging appropriate spatial resolutions for accurate localization in aerial imagery.}
+%     \label{tab:measurements}
+% \end{table}
+
+
+\subsubsection{Loss Function Optimization}
+
+The loss function in YOLOv5 consists of the classification loss \( L_{\text{cls}} \), location loss \( L_{\text{loc}} \), and object confidence loss \( L_{\text{obj}} \), which measure the distance between the anchor box classification and the ground-truth class, the predicted box and the labeled box, and the probability of the anchor box containing an object, respectively. The total loss is given by Equation \eqref{eq:loss}.
+
+\begin{equation}
+\text{Loss} = \lambda_1 L_{\text{cls}} + \lambda_2 L_{\text{loc}} + \lambda_3 L_{\text{obj}}
+\label{eq:loss}
+\end{equation}
+
+Both \( L_{\text{cls}} \) and \( L_{\text{obj}} \) use binary cross-entropy loss. \( L_{\text{cls}} \) only computes the loss for positive samples, while \( L_{\text{obj}} \) computes the loss for both positive and negative samples. \( L_{\text{obj}} \) also uses the CIoU (Complete Intersection over Union) loss for positive samples. \( \lambda_1 \), \( \lambda_2 \), and \( \lambda_3 \) are the weighting factors, which are set as in YOLOv5. 
+The object confidence loss \( L_{\text{obj}} \) is given by Equation \eqref{eq:lobj}.
+
+\begin{equation}
+L_{\text{obj}} = B_1 L_{\text{obj}}^{\text{small}} + B_2 L_{\text{obj}}^{\text{medium}} + B_3 L_{\text{obj}}^{\text{large}} + B_4 L_{\text{obj}}^{\text{new}}
+\label{eq:lobj}   
+\end{equation}
+
+where \( L_{\text{obj}}^{\text{small}} \), \( L_{\text{obj}}^{\text{medium}} \), and \( L_{\text{obj}}^{\text{large}} \) denote the loss for small, medium, and large-scale feature maps, respectively. \( B_1 \), \( B_2 \), and \( B_3 \) are the weighting factors, as optimized on the COCO\cite{Lin2014} dataset. In this work, we add a new loss term \( B_4 L_{\text{obj}}^{\text{new}} \) to the equation for the newly added feature map. The weighting factors \( B_1 \), \( B_2 \), \( B_3 \), and \( B_4 \) are set based on the database. The initial values for the four factors were set to 4.0, 1.0, 0.4, and 0.2, borrowing the idea from YOLOv5, where small objects, which are more difficult to detect, are given larger weights in the loss function.
+
+Additionally, we consider the training sample distribution (Table~\ref{tab:size_category}), as classes with fewer samples are more challenging to recognize. The final weights are obtained by multiplying each factor by the corresponding ratio \( r_i \), which is computed as described in Equation \eqref{eq:ri}.
+\begin{equation}
+r_i = \text{norm}\left(\frac{1}{R_i}\right)
+\label{eq:ri}
+\end{equation}
+
+where \( R_i \) denotes the sample ratio for the \( i \)-th scale in k-means clustering, and \( \text{norm}() \) denotes the normalization function.
+
+
+\begin{table}[h]
+    \centering
+      % \resizebox{0.5\textwidth}{!}{
+    \begin{tabular}{|l|c|c|}
+    \hline
+    \textbf{Size Category} & \textbf{Distribution ratios (Ri)} & \textbf{Weight factors (ri)} \\ \hline
+    very small & 0.3090 & 0.0539 \\ \hline
+    small & 0.2766 & 0.0603 \\ \hline
+    medium & 0.3946 & 0.0422 \\ \hline
+    large & 0.0198 & 0.8436 \\ \hline
+    \end{tabular}
+    % }
+    \vspace{0.2cm}
+    \caption{The description of size-wise distribution ratios and corresponding weight factors used to balance the object confidence loss, ensuring improved detection accuracy by assigning higher importance to underrepresented object categories}
+    \label{tab:size_category}
+\end{table}
+
+
+\subsubsection{Data Augmentation}
+Aerial imagery often features small objects that can be easily overlooked due to variations in scale, lighting conditions, and occlusions from environmental elements like clouds or foliage. To address these issues, we utilized several built-in augmentations. For instance, RandomResizedCrop alters the scale and aspect ratio of images, which is crucial for training the model to recognize objects of varying sizes and shapes in different contexts. Techniques like Blur and MedianBlur simulate out-of-focus scenarios, helping the model learn to maintain accuracy even when images are not perfectly clear. Furthermore, augmentations such as ToGray and CLAHE (Contrast Limited Adaptive Histogram Equalization) enhance the model's adaptability to grayscale images and improve contrast in low-visibility conditions.
+To further bolster the model's resilience against adverse weather conditions, we introduced RandomFog and RandomRain, which create synthetic fog and rain effects. This prepares the model for low-visibility scenarios. Additionally, we incorporated object-specific techniques like Cutout, which masks random regions of an image to promote robustness against partial occlusions-an essential feature for detecting small objects that may be obscured by other elements in the scene. The RandomCropNearBBox technique focuses on regions surrounding detected objects, allowing the model to learn finer details critical for accurate localization. Moreover, Copy-Pasting Small Objects increases the frequency of small objects within images, enriching the dataset and ensuring that the model encounters a diverse array of examples during training. Finally, Select-Mosaic Augmentation stitches multiple images together with an emphasis on regions containing dense small objects, creating complex training samples that mimic real-world scenarios more closely.
+These diverse augmentation strategies significantly improve the model’s robustness and generalization to the complexities of aerial imagery, ensuring higher accuracy and reliability in real-world small object detection tasks \cite{Kupyn2018}. 
+
+
+\subsection{Inference}
+Traditional approaches typically require downscaling images to accommodate GPU memory constraints, leading to loss of critical details and reduced detection accuracy for smaller objects. YOLOv5, while highly efficient for general object detection tasks, faces similar limitations when processing large images. SAHI addresses these challenges by implementing an intelligent slicing mechanism that enables detailed analysis of image regions while maintaining contextual information. 
+The proposed methodology combines SAHI's image slicing technique with YOLOv5's detection capabilities. SAHI preprocesses input images by creating overlapping slices, effectively breaking down large images into manageable segments while ensuring no objects are missed at slice boundaries. 
+These slices maintain the original resolution, allowing YOLOv5 to process each segment at full fidelity. YOLOv5 then performs object detection on each slice independently, leveraging its efficient architecture to identify objects across multiple scales. The results from individual slices undergo post-processing, including sophisticated non-maximum suppression (NMS) algorithms, to merge duplicate detections and produce coherent final predictions \cite{akyon2022icip,akyon2022slicing}.
+
+
+
+
+\section{Experimentation and Results}
+
+\subsection{Dataset Descriptions and Analysis}
+
+\begin{comment}
+Our dataset is a merged collection from four different sources, ensuring a diverse and comprehensive representation of aerial objects. It consists of 7531 annotated images, with a total of 16824 instances across five categories: birds (9734), helicopters (1392), airplanes (1997), drones (2834), and hot air balloons (867), as illustrated in the class distribution bar chart (Figure~\ref{fig:dataset_env}). The dataset was manually annotated using the LabelImg tool, ensuring precise bounding box labels for each object\cite{tzutalin2015labelimg}. The dataset includes images captured under various weather conditions, such as clear skies, cloudy settings, and low-visibility scenarios, adding robustness to real-world applications. Furthermore, several images contain multiple instances of different object categories, making it suitable for multi-object detection tasks.
+To gain insights into the dataset's structure, we analyzed various spatial and size distributions of objects. 
+The object position heatmap (Figure~\ref{fig:class_dist}) shows a strong central bias in object positions, a common trend in aerial datasets. The width-height scatter plot (Figure \ref{fig:wh_heatmap}) reveals a wide range of object sizes, with smaller objects being more frequent, while larger objects are comparatively rare. This reflects the natural variation in aerial object sizes, where birds and drones tend to have smaller bounding boxes, whereas airplanes and hot air balloons occupy significantly larger areas.
+Additionally, the bounding box overlap visualization (Figure~\ref{fig:box_overlay}) highlights common object placement patterns and relative sizes.
+The pair plot (Figure~\ref{fig:xy_heatmap}) provides scatter plots and histograms of bounding box attributes, including position (x, y) and size (width, height). 
+    
+\end{comment}
+
+{\color{red}
+The dataset considered for evaluation in this paper is a merged collection from four different sources, comprising 7,531 annotated images with 16,824 instances across five categories: birds (9,734), helicopters (1,392), airplanes (1,997), drones (2,834), and hot air balloons (867). This is illustrated in the class distribution bar chart (Figure \ref{fig:class_dist}). 
+% , the distribution is heavily skewed toward birds (57.9\%), with hot air balloons being the least represented class (5.2\%). This inherent imbalance reflects real-world aerial scene statistics and must be accounted for during training to avoid biased detection. 
+All images were manually annotated using the LabelImg tool \cite{tzutalin2015labelimg} and span diverse acquisition conditions — clear skies, overcast settings, and low-visibility scenarios — ensuring environmental robustness. Many images contain multiple co-occurring object categories, making the dataset well-suited for multi-class aerial detection.
+To characterize the dataset structure, we analyzed the spatial and geometric distributions of all bounding boxes. The overlay visualization in Figure \ref{fig:box_overlay} reveals a dense concentration of boxes in the central image region, consistent with the acquisition geometry of aerial platforms where targets typically project near the sensor center. This central bias is further confirmed by the object center heatmap in Figure \ref{fig:xy_heatmap}, which shows a sharply peaked density at approximately (0.5, 0.5) decaying monotonically toward the image boundaries — a property that directly informs anchor placement strategies in anchor-based detectors. The width-height scatter plot in Figure \ref{fig:wh_heatmap}  demonstrates a strong positive correlation along the diagonal, while the heavy concentration of points near the origin confirms that the vast majority of instances are small relative to image size. This reflects the physical scale of birds and drones, which dominate the dataset, as opposed to the comparatively large extents of hot air balloons and low-altitude airplanes.
+The pairwise distribution plot in Figure \ref{fig:dataset_dots} consolidates these observations across all four normalized bounding box attributes (x, y, width, height). The marginal histograms of x and y are near-uniform, indicating broad spatial coverage despite the central density bias, while those of width and height are strongly right-skewed, with sharp peaks near zero and long sparse tails. The off-diagonal scatter plots reveal a triangular structure in which large objects cluster near the image center while small objects span the full spatial extent — a scale-position dependency that motivates scale-aware feature extraction. Together, these analyses underscore the need for multi-scale architectures, small-anchor configurations, and class-imbalance mitigation strategies in any detection model evaluated on this 
+ dataset}.
+
+\begin{figure}[!h]
+     \centering
+     % Top Left: Class Distribution
+     \begin{subfigure}[b]{0.48\textwidth}
+         \centering
+         \includegraphics[scale=0.36]{aerial_objects_chart.pdf}
+         \caption{Bar chart showing instances of categories: bird, helicopter, airplane, drone, and hot air balloon}
+         \label{fig:class_dist}
+     \end{subfigure}
+     \hfill
+     % Top Right: Bounding Box Overlay
+     \begin{subfigure}[b]{0.48\textwidth}
+         \centering
+         \includegraphics[scale=0.7]{boundingbox.pdf}
+         \caption{Visual representation of bounding box distributions across the dataset}
+         \label{fig:box_overlay}
+     \end{subfigure}
+
+     \vspace{15pt}
+
+     % Bottom Left: X-Y Coordinate Heatmap
+     \begin{subfigure}[b]{0.48\textwidth}
+         \centering
+         \includegraphics[scale=0.65]{heatmap.pdf}
+         \caption{Heatmap of object center coordinates (x, y) normalized between 0.0 and 1.0}
+         \label{fig:xy_heatmap}
+     \end{subfigure}
+     \hfill
+     % Bottom Right: Width-Height Heatmap
+     \begin{subfigure}[b]{0.48\textwidth}
+         \centering
+         \includegraphics[scale=0.65]{correlation.pdf}
+         \caption{Correlation plot between normalized object width and height}
+         \label{fig:wh_heatmap}
+     \end{subfigure}
+
+     \caption{Analysis of the dataset labels and spatial distribution.}
+     \label{fig:dataset_analysis}
+\end{figure}
+
+
+% \begin{figure}[!h]
+%     \centering
+%     % \includegraphics[width=1.05\textwidth]{CNN_Proposed_Architecture.drawio (5).pdf}
+%     \includegraphics[scale=0.7]{dataset.pdf}
+%     \caption{Detailed dataset analysis showing class frequency, bounding box overlaps, and spatial/size distributions.}
+%     \label{fig:dataset_env}
+% \end{figure}
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[scale=0.8]{dots.pdf}
+    \caption{Distribution of ground truth bounding boxes in terms of normalized $x$, $y$, width, and height values.}
+    \label{fig:dataset_dots}
+\end{figure}
+
+
+
+% \begin{figure}[h]
+%     \centering
+%     \begin{subfigure}{0.8\linewidth}
+%         \centering
+%         \includegraphics[scale=0.3]{dataset.pdf}
+%         \caption{Detailed dataset analysis showing class frequency, bounding box overlaps, and spatial/size distributions.}
+%         \label{fig:dataset_env}
+%     \end{subfigure}
+%     \\
+%     \begin{subfigure}{0.8\linewidth}
+%         \centering
+%         \includegraphics[width=0.4\textwidth]{dots.pdf}
+%         \caption{Distribution of ground truth bounding boxes in terms of normalized $x$, $y$, width, and height values.}
+%         \label{fig:dataset_dots}
+%     \end{subfigure}
+%     \caption{Comprehensive analysis of the dataset: (a) Distribution of bounding box coordinates and dimensions, and (b) statistical breakdown of class instances and bounding box characteristics.}
+%     \label{fig:dataset_samples}
+% \end{figure}
+
+\subsection{Experimentation Environment}
+The experiments were conducted on a server running Ubuntu 22.04 operating system, utilizing Python 3.10 as the programming language. The deep learning framework used was PyTorch 2.1.0, with CUDA 12.4 as the parallel computing platform. The hardware included an NVIDIA TITAN RTX GPU. All experiments were performed with consistent hyperparameters (Table~\ref{tab:hyperparams}) across tests. Specifically, the training was carried out for 100 epochs with a batch size of 16, an initial learning rate of 0.01, and an image resolution of 1024 × 1024 pixels.
+	The performance of the model in this experiment was evaluated using several metrics: precision (P), recall (R), mAP50, mAP50-95 and the number of parameters. Precision (P) measures the accuracy of the model, defined as the ratio of correctly predicted positive observations to the total predicted as positive. Recall (R) assesses the model’s ability to capture all relevant cases, defined as the ratio of correctly identified positive cases to all actual positive cases. AP represents the area under the precision–recall (PR) curve, and the mean average precision (mAP) is calculated by averaging the AP across all categories. mAP50 refers to the mean precision at an Intersection over the Union (IoU) threshold of 0.5; it is the most used metric for measuring accuracy in object detection. It intuitively reflects the overall performance of the model in object detection, especially in small object detection scenarios. mAP50-95 refers to the mean precision across the IoU threshold ranging from 0.5 to 0.95, making it a more stringent evaluation metric. It provides a more comprehensive reflection of the model’s detection performance across different object sizes and scenarios, particularly for precise small object localization.
+    
+\begin{table}[h]
+    \centering
+    % \renewcommand{\arraystretch}{1.3}  % Adjust row height
+    % \setlength{\tabcolsep}{5pt}  % Adjust column spacing
+    % \resizebox{0.5\textwidth}{!}{ % Resize to 0.5 times the text width
+    \footnotesize{
+        \begin{tabular}{|p{3.1cm}|p{2.3cm}|p{5.2cm}|}
+            \hline
+            \textbf{Hyperparameter} & \textbf{Value Used} & \textbf{Description} \\
+            \hline
+            \textbf{Image Size} & 1024x1024 & Input image resolution for training. \\
+            \textbf{Batch Size} & 16 & Number of images processed per batch. \\
+            \textbf{Epochs} & 100 & Total number of training iterations. \\
+            \textbf{Learning Rate (lr0)} & 0.001 & Initial learning rate for optimization. \\
+            \textbf{Momentum} & 0.937 & Helps accelerate gradients for convergence. \\
+            \textbf{Weight Decay} & 0.0005 & Regularization to prevent overfitting. \\
+            \textbf{IoU Threshold} & 0.5 & Intersection over Union threshold for detection. \\
+            \textbf{Confidence Threshold} & 0.25 & Minimum confidence score for predictions. \\
+            \hline
+        \end{tabular}
+    }
+    % \vspace{0.2cm}
+    \caption{ Summary of hyperparameters used during training, including input size, batch configuration, learning settings, and detection thresholds to optimize model performance and generalization.}
+    \label{tab:hyperparams}
+\end{table}
+\subsection{Data Augmentation Visualization}
+
+To illustrate the effects of different augmentation techniques applied to aerial imagery, we perform the following visual comparisons:
+
+\subsubsection{Rain Augmentation}
+Rain augmentation(Figure~\ref{fig:rain}), implemented using the Albumentations library, simulates rainfall by overlaying synthetic raindrop effects on images. This enhances model robustness by preparing it for real-world scenarios involving adverse weather conditions.
+\begin{figure}[!h]
+    \centering
+    \begin{subfigure}[b]{0.7\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{withoutrainaug (1).pdf}
+        \caption{Original Image (No Rain)}
+        %\label{fig:dataset_env}
+    \end{subfigure}
+    \\
+    \begin{subfigure}[b]{0.7\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{rainaug (1).pdf}
+        \caption{Image with Rain Effect}
+        % \label{fig:dataset_dots}
+    \end{subfigure}
+    \caption{ Comparison between the original image and its rain-augmented counterpart, created using Albumentations to simulate rainy conditions for enhancing model resilience in adverse weather scenarios..}
+    \label{fig:rain}
+\end{figure}
+
+\subsubsection{Fog Augmentation}
+Fog augmentation (Figure~\ref{fig:fog}), simulates realistic foggy conditions by overlaying semi-transparent layers to reduce visibility. This helps models generalize better to real-world scenarios where fog obstructs aerial views.
+\begin{figure}
+    \centering
+    \includegraphics[width=\linewidth]{fogdemo (1).pdf}\\
+    \caption{Demonstration of fog augmentation at different intensities:  fog augmentation applied at varying levels of intensity to simulate real-world visibility conditions and improve model robustness under adverse weather scenarios.}
+    \label{fig:fog}
+\end{figure}
+
+\subsubsection{Cutout Augmentation}
+Cutout augmentation (Figure~\ref{fig:cutout}), randomly masks regions of an image to simulate occlusions. This forces the model to learn more robust feature representations, improving detection under partially obscured conditions.
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\linewidth]{cutoutdemo (1).pdf}\\
+    \caption{Illustration of cutout augmentation at varying intensities, showing its effect on visual occlusion by randomly masking image regions to enhance model robustness against partial object visibility.}
+    \label{fig:cutout}
+\end{figure}
+
+
+\subsection{Implementation Details of SAHI}
+The integration framework operates through precisely defined stages optimized for 200 x 400 pixel slices. Initially, the system processes the input image using SAHI's slicing mechanism with predefined parameters (slice\_height=200, slice\_width=400) and a 20\% overlap ratio for both dimensions. This was chosen to balance processing efficiency with detection accuracy, particularly for landscape-oriented scenes. The detection pipeline processes each slice using a model pre-trained on domain-specific data, with confidence thresholds adjusted to maintain consistency across slice boundaries. The post-processing pipeline implements a modified NMS algorithm specifically tuned for the 20\% overlap zones, ensuring smooth detection continuity between adjacent slices.
+
+Initial experiments using SAHI with our model on drone images revealed a drop in mAP compared to traditional methods. The root cause was identified as a mismatch in training and inference data distributions. The model was trained on large, unsegmented drone images, while inference was conducted on sliced images. This discrepancy led to inconsistent predictions, missed detections, and reduced localization accuracy.
+
+To address this issue, we implemented the following workflow:
+
+\textbf{Image Slicing:} Large drone images were systematically divided into four equal segments using SAHI’s slicing tools, ensuring no overlap.
+
+\textbf{Re-Labeling:} The sliced images were manually re-labeled to ensure accurate annotations for each segment. This step accounted for objects that might have been cut during slicing.
+
+\textbf{Model Retraining:} The model was retrained on this new dataset of sliced and labelled images. This allowed the model to learn features relevant to the scale and context of the smaller segments.
+
+\textbf{Evaluation:} Post-training, the model was tested on sliced images at inference to ensure consistency between training and test conditions.
+
+
+
+
+
+\subsection{Performance Analysis}
+
+\begin{figure}[!h]
+     \centering
+     % Top Left: Class Distribution
+     \begin{subfigure}[b]{0.48\textwidth}
+         \centering
+        \includegraphics[width=\linewidth]{train_improved_hq.pdf}
+        \caption{Training loss curves illustrating the progressive reduction of box loss, classification loss, and objectness loss across iterations.
+        % Training loss curves illustrating the progressive reduction of box loss, classification loss, and objectness loss across iterations.
+        }
+        \label{fig:loss_curve}
+     \end{subfigure}
+     \hfill
+     \begin{subfigure}[b]{0.48\textwidth}
+         \centering
+        \includegraphics[width=\linewidth]{metrics_improved_hq.pdf}
+        \caption{Illustration of performance trends over training iteration in terms of mAP@0.5, mAP@0.5:0.95, precision, and recall.
+        % Illustration of performance trends over training iteration in terms of   mAP@0.5, mAP@0.5:0.95, precision, and recall.
+        }
+        \label{fig:metrics_curve}
+     \end{subfigure}
+     \caption{Comprehensive evaluation of the model's training process, depicting the convergence of various loss functions and the corresponding improvement in object detection performance metrics.}
+     \label{fig:train_test}
+\end{figure}
+
+
+% \begin{figure}[t]
+%     \centering
+%     \includegraphics[width=0.7\textwidth]{train_improved.png}
+%     \caption{Training loss curves illustrating the progressive reduction of box loss, classification loss, and objectness loss across iterations.}
+%     \label{fig:loss_curve}
+% \end{figure}
+
+% \begin{figure}[t]
+%     \centering
+%     \includegraphics[width=\linewidth]{metrics.pdf}
+%     \caption{Illustration of performance trends over training iteration in terms of   mAP@0.5, mAP@0.5:0.95, precision, and recall.}
+%     \label{fig:metrics_curve}
+% \end{figure}
+
+\begin{figure*}[h]
+    \centering
+    \includegraphics[width=0.99\textwidth]{cam_i (2).pdf}\\
+    \includegraphics[width=0.99\textwidth]{cam_j.pdf}
+    \caption{Demonstration of Grad-CAM which compares the attention maps of the baseline YOLO model and the proposed optimized model. (Original Image, Case1, and Case2 from left to right)}
+    \label{fig:cam}
+\end{figure*}
+
+The training curves presented below provide clear evidence of effective model convergence and strong detection performance. As shown in Figure \ref{fig:loss_curve}, all components-box loss, classification loss, and objectness loss-decrease steadily over iterations, with box and classification losses showing significant early reductions and stabilizing by around epoch 50, indicating that the model efficiently learns to localize and classify small objects. The performance metrics plot (Figure \ref{fig:metrics_curve}) further reinforces this, with mAP@0.5 and mAP@0.5:0.95 rising sharply during initial epochs and plateauing above 0.85 and 0.57, respectively. Notably, precision remains consistently high throughout training, while recall shows steady improvement, ultimately stabilizing around 0.90. These trends confirm that the model not only learns accurate bounding box predictions and classifications, but also generalizes well across various object scales and conditions.
+Grad-CAM (Gradient-weighted Class Activation Mapping) is a widely used technique for visualizing the regions in an image that contribute most to a model’s decision-making process. It works by leveraging the gradients of the target class with respect to the feature maps in the final convolutional layers of a deep learning model. These gradients highlight the most important areas in the input image that influenced the model’s predictions. This visualization is useful in understanding how deep learning models, especially convolutional neural networks (CNNs), make decisions, allowing researchers to interpret the model’s focus, identify biases, and improve performance.
+In our study, we used Grad-CAM to analyze the difference in decision-making between a standard YOLO model with transfer learning (without optimizations) and our optimized model. The results, as seen in Figure~\ref{fig:cam}, reveal key insights. In the first case (Figure~\ref{fig:cam}), the YOLO model’s activation map is scattered and lacks strong focus on the object of interest (airplane), whereas our model produces a much sharper and more localized activation, demonstrating better attention to the relevant regions. In the second case (Figure~\ref{fig:cam}), we observe that the YOLO model focuses on irrelevant background areas when detecting drones, leading to weaker detections. In contrast, our model’s activation map highlights the drone more accurately, leading to improved detection performance.
+These visualizations provide crucial evidence that our optimizations result in a more reliable object detection framework. The better localization of high-importance regions suggests that our model is learning more discriminative features, reducing false positives, and improving detection accuracy  \cite{Wang2020ScoreCAM,Desai2020}. %,Chattopadhay2018,Selvaraju2017}.
+
+
+\subsection{Ablation Study}
+To systematically evaluate the impact of various improvements on small aerial object detection, we conducted an ablation study using the YOLOv5 architecture as a baseline. As shown in Table~\ref{tab:results}, the base model achieved an mAP50 of 0.843 and a recall of 0.810. Incorporating anchor box optimization and loss function modification led to a significant increase in both mAP50 (0.891) and recall (0.869), highlighting the importance of precise anchor box selection for small object detection. Further improvements through data augmentation techniques, such as simulated environmental conditions, resulted in a minor boost in accuracy, with an mAP50 of 0.900 and a recall of 0.875. To enhance feature extraction, we integrated a generalized ELAN in the backbone alongside other refinements. This modification yielded the highest performance, achieving an mAP50 of 0.906 and a recall of 0.890, underscoring the effectiveness of dynamic loss scaling for very small objects. Interestingly, a higher variant of the YOLO model  performed slightly worse than our optimized model, with an mAP50 of 0.889 and recall of 0.820, indicating that our domain-specific modifications offer superior performance for small aerial object detection. These results validate our approach, demonstrating that our architectural enhancements and strategies significantly improve detection performance over standard implementations.
+\begin{table}[h]
+\centering
+% \resizebox{0.5\textwidth}{!}{%
+\begin{tabular}{|l|c|c|c|}
+\hline
+\textbf{Model} & \textbf{mAP50} & \textbf{mAP50-95} & \textbf{Recall} \\
+\hline
+Base Model & 0.843 & 0.530 & 0.810 \\
+Base Model + A & 0.891 & 0.562 & 0.869 \\
+Base Model + A + B & 0.900 & 0.565 & 0.875 \\
+Base Model + A + B + C & \textbf{0.906} & \textbf{0.572} & \textbf{0.890} \\
+\hline
+\end{tabular}%
+% }
+
+% \vspace{2mm}
+\begin{minipage}{\textwidth}
+\small
+\vspace*{2ex}
+\textbf{Legend:} \\
+A = Anchor Box Improvement and Loss Improvement\\
+B = Data Augmentation \\
+C = GELAN Integration
+\end{minipage}
+
+\caption{Ablation study results illustrating the effect of successive enhancements on small aerial object detection, using YOLOv5 as the reference baseline.}
+\label{tab:results}
+\end{table}
+
+\subsection{Comparative Analysis}
+Our approach is benchmarked against state-of-the-art models, demonstrating superior performance in detecting small aerial objects. Quantitative results validate the proposed architectural innovations.
+
+The results presented in Table~\ref{tab:model_comparison} highlight the superior performance of our specialized object detection model compared to both the base YOLOv5 and a general-purpose higher YOLO variant. Our model achieves a mAP@50 of 0.906, mAP@50:95 of 0.572, and recall of 0.890, outperforming the base model by significant margins and exceeding the higher YOLO model, which records a recall of only 0.820. These results reinforce a critical insight: while generic models like YOLO are designed for broad object detection tasks across diverse datasets, they often fall short in niche scenarios-such as detecting very small aerial objects in sky-focused imagery-where specialized challenges arise, including minimal pixel representation, low contrast, and occlusions.
+\begin{table}[h!]
+\centering
+% \resizebox{0.5\textwidth}{!}{
+\begin{tabular}{|l|c|c|c|}
+\hline
+\textbf{Model}  & \textbf{mAP@50} & \textbf{mAP@50:95} & \textbf{Recall} \\
+\hline
+Base Model & 0.843 & 0.530 & 0.810 \\
+Our Model & \textbf{0.906} & \textbf{0.572} & \textbf{0.890} \\
+Higher Yolo Model & 0.889 & 0.564 & 0.820 \\
+\hline
+\end{tabular}
+% }
+\vspace{0.2cm}
+\caption{Comparative performance analysis of the proposed customized object detection model against the baseline YOLOv5 and a competing higher YOLO model in terms of mAP@50, mAP@50:95, and recall.}
+\label{tab:model_comparison}
+\end{table}
+
+% In contrast, our model is explicitly tailored for this domain, incorporating targeted enhancements like a high-resolution feature layer, the GELAN backbone for preserving fine-grained spatial features, dynamic loss scaling based on object size distributions, and custom anchor boxes suited for aerial objects. These modifications directly tackle the shortcomings of general-purpose detectors in this context. The consistent improvement across all metrics, especially the 6.3\% increase in mAP@50 over the base model, reflects our model’s ability to deliver more precise localization and better generalization in challenging aerial detection scenarios. This demonstrates that domain-specific architecture and training strategies are far more effective than relying solely on general-purpose models, even if the latter are deeper or more widely adopted.
+Our model is tailored for aerial object detection, with enhancements like a high-resolution feature layer, GELAN backbone, dynamic loss scaling, and custom anchor boxes. These address the limitations of general-purpose detectors. A consistent improvement across all metrics—including a 6.3\% mAP@50 gain—shows superior localization and generalization, highlighting the effectiveness of domain-specific architectures over generic, deeper models.
+
+The performance improvements of our proposed model are particularly evident in the drone class, which consists predominantly of very small scale objects. As shown in the results summary Table~\ref{tab:model_comparison_drone}, our model demonstrates a significant boost in key detection metrics compared to the baseline YOLOv5. Specifically, we observed a 4.4\% increase in recall and a 2.5\% improvement in mAP50, along with a 3.7\% gain in mAP50-95. These enhancements are especially meaningful given the challenging nature of detecting small drones in sky-based imagery. 
+% The improvements can be attributed to our dataset containing a substantial number of small-sized drone instances, which, when combined with our architectural modifications, allowed the model to better learn fine-grained features and improve localization accuracy. This highlights the model’s effectiveness in real-world scenarios where small drone detection is critical.
+% The improvements stem from our dataset’s rich representation of small drones, which, combined with architectural enhancements, enabled better learning of fine-grained features and improved localization. This underscores the model’s effectiveness in real-world small drone detection scenarios.
+\begin{table}[h!]
+\centering
+% \resizebox{0.5\textwidth}{!}{
+\begin{tabular}{|l|c|c|c|c|c|}
+\hline
+\textbf{Model} & \textbf{P} & \textbf{R} & \textbf{mAP@50} & \textbf{mAP@50:95} \\
+\hline
+Base       & 0.922 & 0.894 & 0.933 & 0.586 \\
+Our Model & 0.923 & 0.938 & 0.958 & 0.623 \\
+\hline
+\end{tabular}
+% }
+% \vspace{0.2cm}
+\caption{Performance comparison of the developed model over the baseline YOLOmodel for the drone classification}
+% in terms of mAP@50, mAP@50:95, and recall}
+\label{tab:model_comparison_drone}
+\end{table}
+
+\begin{figure}[h]
+\centering
+% \begin{minipage}[t]{0.90\textwidth}
+    % \centering
+    \includegraphics[width=0.99\linewidth]{dronefinal.pdf}
+    \caption{The illustration of the proposed architecture’s performance in detecting very small-scale drone objects.}
+    % \vspace*{-4ex}
+    \label{fig:dronevsmall}
+% \end{minipage}%
+% %\hspace{0.04\textwidth}
+
+% \begin{minipage}[h]{0.90\textwidth}
+%     \centering
+%     \includegraphics[width=\linewidth]{pdfs/IMAGES/airplanefinal.pdf}
+%     \caption{Detection of small airplane}
+%     \label{fig:airplanesmall}
+% \end{minipage}
+\end{figure}
+
+
+\begin{figure}[!h]
+\centering
+% \begin{minipage}[t]{0.90\textwidth}
+    % \centering
+    \includegraphics[width=0.69\linewidth]{helicopterfinal.pdf}
+    \caption{Illustration of the proposed architecture’s effectiveness in detecting small-scale helicopter objects. }
+    \label{fig:helicopter}
+% \end{minipage}%
+%\hspace{0.04\textwidth}
+\end{figure}
+
+\begin{figure}[h]
+% \begin{minipage}[h]{0.90\textwidth}
+    \centering
+    \includegraphics[width=0.8\linewidth]{twodrones.pdf}
+    \caption{The illustration of the proposed architecture’s performance in detecting two different scale drone objects.}
+    \label{fig:twodrones}
+% \end{minipage}
+\end{figure}
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=0.8\linewidth]{airplanefinal.pdf}
+    \caption{The illustration of the proposed architecture’s performance in detecting small airplane}
+    \label{fig:airplanesmall}
+\end{figure}
+
+\subsection{Detection Results and Analysis}
+The developed framework demonstrates robust small object detection capabilities across varied environments and challenging scenarios. In Figure~\ref{fig:dronevsmall}, despite a cluttered urban and rural landscape with construction cranes and buildings, the model accurately identifies a drone flying above the horizon with a confidence score of 0.70. This highlights the model’s ability to localize minute aerial objects even in complex and textured backgrounds. Figure~\ref{fig:helicopter} presents a minimal-contrast environment, where a helicopter is barely visible against a gray, foggy sky. The model still achieves a high confidence detection of 0.86, showcasing its resilience in low visibility and low texture conditions. Figure~\ref{fig:twodrones} further emphasizes the model’s effectiveness in multi-object scenarios, where two drones flying at different altitudes are successfully detected. This demonstrates the framework’s competence in handling multiple instances of small aerial objects. In Figure~\ref{fig:airplanesmall}, the model performs well under overcast conditions, detecting a distant airplane against a cloudy skyline with a confidence score of 0.68. Collectively, these examples confirm that our developed model is capable of consistently detecting very small objects across diverse aerial surveillance conditions, ranging from complex urban scenes to visually degraded skies.
+
+
+\section{Conclusion}
+In this paper, we presented an enhanced object detection model by integrating YOLO with advanced data augmentation strategies, optimized anchor box configurations, architectural improvements, and a dynamic loss function tailored for small object detection. The model is rigorously evaluated on benchmark aerial datasets, achieving a mAP@50 of 0.906 and a recall of 0.890, and demonstrating its superior detection accuracy Additionally, the model's recall value of 0.890 highlights its ability to minimize false negatives effectively. Notably, the proposed enhancements led to a 2\% improvement in accuracy over the baseline YOLOv5 model
+These results validate the effectiveness of our proposed enhancements in improving the precision and robustness of object detection tasks. Future work may involve testing the model on more diverse datasets and exploring further refinements to ensure its applicability in real-world scenarios with varying operational environments. 
+
+\section*{Declaration of competing interests}
+The authors declare that they have no known competing interests.
+
+\section*{Funding  Sources}
+This research did not receive any specific grant from funding agencies in the public, commercial, or not-for-profit sectors.
+
+% \bibliographystyle{plainnat} 
+\bibliographystyle{elsarticle-num} 
+\bibliography{references}
+ 
+%%%%%%%%%%%%%@%@%
+\begin{comment}
+    
+\section{Example Section}
+\label{sec1}
+%% Labels are used to cross-reference an item using \ref command.
+
+Section text. See Subsection \ref{subsec1}.
+
+%% Use \subsection commands to start a subsection.
+\subsection{Example Subsection}
+\label{subsec1}
+
+Subsection text.
+
+%% Use \subsubsection, \paragraph, \subparagraph commands to 
+%% start 3rd, 4th and 5th level sections.
+%% Refer following link for more details.
+%% https://en.wikibooks.org/wiki/LaTeX/Document_Structure#Sectioning_commands
+
+\subsubsection{Mathematics}
+%% Inline mathematics is tagged between $ symbols.
+This is an example for the symbol $\alpha$ tagged as inline mathematics.
+
+%% Displayed equations can be tagged using various environments. 
+%% Single line equations can be tagged using the equation environment.
+\begin{equation}
+f(x) = (x+a)(x+b)
+\end{equation}
+
+%% Unnumbered equations are tagged using starred versions of the environment.
+%% amsmath package needs to be loaded for the starred version of equation environment.
+\begin{equation*}
+f(x) = (x+a)(x+b)
+\end{equation*}
+
+%% align or eqnarray environments can be used for multi line equations.
+%% & is used to mark alignment points in equations.
+%% \\ is used to end a row in a multiline equation.
+\begin{align}
+ f(x) &= (x+a)(x+b) \\
+      &= x^2 + (a+b)x + ab
+\end{align}
+
+\begin{eqnarray}
+ f(x) &=& (x+a)(x+b) \nonumber\\ %% If equation numbering is not needed for a row use \nonumber.
+      &=& x^2 + (a+b)x + ab
+\end{eqnarray}
+
+%% Unnumbered versions of align and eqnarray
+\begin{align*}
+ f(x) &= (x+a)(x+b) \\
+      &= x^2 + (a+b)x + ab
+\end{align*}
+
+\begin{eqnarray*}
+ f(x)&=& (x+a)(x+b) \\
+     &=& x^2 + (a+b)x + ab
+\end{eqnarray*}
+
+%% Refer following link for more details.
+%% https://en.wikibooks.org/wiki/LaTeX/Mathematics
+%% https://en.wikibooks.org/wiki/LaTeX/Advanced_Mathematics
+
+%% Use a table environment to create tables.
+%% Refer following link for more details.
+%% https://en.wikibooks.org/wiki/LaTeX/Tables
+\begin{table}[t]%% placement specifier
+%% Use tabular environment to tag the tabular data.
+%% https://en.wikibooks.org/wiki/LaTeX/Tables#The_tabular_environment
+\centering%% For centre alignment of tabular.
+\begin{tabular}{l c r}%% Table column specifiers
+%% Tabular cells are separated by &
+  1 & 2 & 3 \\ %% A tabular row ends with \\
+  4 & 5 & 6 \\
+  7 & 8 & 9 \\
+\end{tabular}
+%% Use \caption command for table caption and label.
+\caption{Table Caption}\label{fig1}
+\end{table}
+
+
+%% Use figure environment to create figures
+%% Refer following link for more details.
+%% https://en.wikibooks.org/wiki/LaTeX/Floats,_Figures_and_Captions
+\begin{figure}[t]%% placement specifier
+%% Use \includegraphics command to insert graphic files. Place graphics files in 
+%% working directory.
+\centering%% For centre alignment of image.
+\includegraphics{example-image-a}
+%% Use \caption command for figure caption and label.
+\caption{Figure Caption}\label{fig1}
+%% https://en.wikibooks.org/wiki/LaTeX/Importing_Graphics#Importing_external_graphics
+\end{figure}
+
+
+%% The Appendices part is started with the command \appendix;
+%% appendix sections are then done as normal sections
+\appendix
+\section{Example Appendix Section}
+\label{app1}
+
+Appendix text.
+
+%% For citations use: 
+%%       \cite{<label>} ==> [1]
+
+%%
+Example citation, See \cite{lamport94}.
+\end{comment}
+%% If you have bib database file and want bibtex to generate the
+%% bibitems, please use
+%%
+
+%% else use the following coding to input the bibitems directly in the
+%% TeX file.
+
+%% Refer following link for more details about bibliography and citations.
+%% https://en.wikibooks.org/wiki/LaTeX/Bibliography_Management
+
+% \begin{thebibliography}{00}
+
+% %% For numbered reference style
+% %% \bibitem{label}
+% %% Text of bibliographic item
+
+% \bibitem{lamport94}
+%   Leslie Lamport,
+%   \textit{\LaTeX: a document preparation system},
+%   Addison Wesley, Massachusetts,
+%   2nd edition,
+%   1994.
+
+% \end{thebibliography}
+\end{document}
+
+\endinput
+%%
+%% End of file `elsarticle-template-num.tex'.
